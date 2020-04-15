@@ -17,7 +17,7 @@ weatherForm.addEventListener('submit', (e) => {
                 messageOne.textContent = data.error
             } else {
                 messageOne.textContent = data.location
-                messageTwo.textContent = 'Summary:' + data.forecast.summary + ', temperature is ' + data.forecast.temperature + ' and probability for rain is ' + data.forecast.percipProbability
+                messageTwo.textContent = data.forecast
             }
         })
     })
